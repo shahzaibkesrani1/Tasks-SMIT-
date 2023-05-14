@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+
+<body>
+    <button onclick="generate()" class="abc">Generate Qoute</button>
+    <div id="result">
+
+    </div>
+    <style>
+        .abc {
+            border: 1px solid black;
+            cursor: pointer;
+            padding: 10px;
+            text-align: center;
+            margin-top: 100px;
+            font-size: 22px;
+            font-weight: 600;
+            box-shadow: 2px 0px 0px 8px black;
+            align-items: center;
+            margin-left: 125px;
+
+        }
+
+        body {
+            background-color: #f1f1f1;
+        }
+
+        #result {
+
+            border: 1px solid black;
+            margin: 10px;
+            padding: 20px;
+            text-align: center;
+            margin-top: 100px;
+            font-size: 32px;
+            font-weight: 600;
+            font-family: sans;
+            border-width: 10px;
+            background-color: rgb(244, 233, 219);
+            box-shadow: 2px 0px 0px 8px black;
+        }
+    </style>
+    <script>
+        function generate() {
+            var qoute = ["In the midst of difficulty lies opportunity.",
+                "Believe you can and you're halfway there.",
+                "The only way to do great work is to love what you do.",
+                "Be yourself; everyone else is already taken.",
+                "The future belongs to those who believe in the beauty of their dreams."]
+
+            var random = Math.floor(Math.random() * qoute.length)
+            var result = document.getElementById("result").innerHTML = qoute[random]
+        }
+    </script>
+
+</body>
+
+</html>
